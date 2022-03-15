@@ -5,3 +5,4 @@
 - [Laurence Rowe](https://github.com/lrowe)
 - [Remi Marsal](https://github.com/remimarsal)
 - [JKaveri](https://github.com/Jkaveri)
+- [James Zhang](https://github.com/jameszhang-a)
