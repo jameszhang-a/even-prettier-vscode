@@ -1,6 +1,9 @@
 out
+dist
 node_modules
 .vscode-test
-.DS_Store
+.vscode-test-web
 *.vsix
-.eslintrc
+.DS_STORE
+*.log
+test-results.xml
