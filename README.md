@@ -33,7 +33,7 @@ This extension is a wrapper around Prettier Miscellaneous, please report issues 
 #### *Update 1.1.0*
 *Added support for TypeScript, CSS, LESS and SASS files.* -->
 
-### *Update 0.5.0*
+### *Update 0.5.1*
 Reviving the project with info update and dependency update
 
 --------------------------------------------------------------------------------
