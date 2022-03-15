@@ -12,22 +12,22 @@ import { hideChannel, addToOutput } from './output';
  * @param fileName 
  */
 export function exec(
-    cb: () => string,
-    originalText: string,
-    document: TextDocument
+  cb: () => string,
+  originalText: string,
+  document: TextDocument
 ): string {
-    try {
-        const ret = cb();
+  try {
+    const ret = cb();
 
-        statusSuccess();
-        hideChannel();
+    statusSuccess();
+    hideChannel();
 
-        return ret;
-    } catch (e) {
-        handleError(e, document);
+    return ret;
+  } catch (e) {
+    handleError(e, document);
 
-        return originalText;
-    }
+    return originalText;
+  }
 }
 
 /**
@@ -38,23 +38,23 @@ export function exec(
  * @param document 
  */
 function handleError(err: any, document: TextDocument) {
-    const config = getExtensionConfig();
+  const config = getExtensionConfig();
 
-    statusFailed();
-    addToOutput(err.message, document.fileName);
+  statusFailed();
+  addToOutput(err.message, document.fileName);
 
-    // move cursor straight to error
-    if (config.autoScroll && err.loc) {
-        const errorPosition = new Position(
-            err.loc.start.line - 1,
-            err.loc.start.column
-        );
+  // move cursor straight to error
+  if (config.autoScroll && err.loc) {
+    const errorPosition = new Position(
+      err.loc.start.line - 1,
+      err.loc.start.column
+    );
 
-        const rangeError = new Range(errorPosition, errorPosition);
+    const rangeError = new Range(errorPosition, errorPosition);
 
-        window.showTextDocument(document).then((editor) => {
-            editor.selection = new Selection(rangeError.start, rangeError.end);
-            editor.revealRange(rangeError);
-        });
-    }
+    window.showTextDocument(document).then((editor) => {
+      editor.selection = new Selection(rangeError.start, rangeError.end);
+      editor.revealRange(rangeError);
+    });
+  }
 }

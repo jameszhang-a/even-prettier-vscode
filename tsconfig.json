@@ -11,9 +11,18 @@
         "removeComments": true,
         "allowUnreachableCode": true,
         "allowJs": true,
-        "lib": [ "es2016", "dom" ],
+        "lib": [
+            "es2016",
+            "dom"
+        ],
         "sourceMap": true,
         "rootDir": "."
     },
-    "exclude": [ ".vscode-test", "node_modules", "ext", "test", "out" ]
+    "exclude": [
+        ".vscode-test",
+        "node_modules",
+        "ext",
+        "test",
+        "out"
+    ]
 }

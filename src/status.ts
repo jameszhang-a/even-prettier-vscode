@@ -1,9 +1,9 @@
 import {
-    window,
-    workspace,
-    StatusBarItem,
-    StatusBarAlignment,
-    TextDocument
+  window,
+  workspace,
+  StatusBarItem,
+  StatusBarAlignment,
+  TextDocument
 } from 'vscode';
 
 import { channelCommand } from './output';
@@ -19,29 +19,29 @@ let currentDocument: TextDocument;
  * Initial text
  */
 export function statusInitial(): void {
-    statusBarItem.show();
-    updateStatus('...');
+  statusBarItem.show();
+  updateStatus('...');
 }
 
 /**
  * Displays check
  */
 export function statusSuccess(): void {
-    updateStatus('$(check)');
+  updateStatus('$(check)');
 }
 
 /**
  * Displays alert
  */
 export function statusFailed(): void {
-    updateStatus('$(issue-opened)');
+  updateStatus('$(issue-opened)');
 }
 
 /**
  * Clear the status bar
  */
 export function clearStatus(): void {
-    statusBarItem.text = ``;
+  statusBarItem.text = ``;
 }
 
 /**
@@ -50,7 +50,7 @@ export function clearStatus(): void {
  * @param message
  */
 function updateStatus(message: string): void {
-    statusBarItem.text = `${statusKey} ${message}`;
+  statusBarItem.text = `${statusKey} ${message}`;
 }
 
 /**
@@ -60,36 +60,35 @@ function updateStatus(message: string): void {
  * @param supportedLanguages 
  */
 function toggleStatusBar(document: TextDocument): void {
-    if (document.languageId === `Log`) {
-        return;
-    }
+  if (document.languageId === `Log`) {
+    return;
+  }
 
-    if (!currentDocument || document !== currentDocument) {
-        currentDocument = document;
-        isLanguageActive(document.languageId) ? statusInitial() : clearStatus();
-    }
+  if (!currentDocument || document !== currentDocument) {
+    currentDocument = document;
+    isLanguageActive(document.languageId) ? statusInitial() : clearStatus();
+  }
 }
 
 /**
  * Setup status bar if current document is supported
  */
 export function setupStatusHandler(): void {
-    let config = getExtensionConfig();
+  let config = getExtensionConfig();
 
-    // init status bar
-    statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left, 42);
-    statusBarItem.command = channelCommand;
+  // init status bar
+  statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left, 42);
+  statusBarItem.command = channelCommand;
 
-    // initial toggle
-    window.activeTextEditor &&
-        toggleStatusBar(window.activeTextEditor.document);
+  // initial toggle
+  window.activeTextEditor && toggleStatusBar(window.activeTextEditor.document);
 
-    // setting event handlers
-    window.onDidChangeActiveTextEditor((e) => toggleStatusBar(e.document));
-    workspace.onDidChangeConfiguration(() => {
-        config = getExtensionConfig();
-        !config.statusBar && clearStatus();
-    });
-
+  // setting event handlers
+  window.onDidChangeActiveTextEditor((e: any) => toggleStatusBar(e.document));
+  workspace.onDidChangeConfiguration(() => {
+    config = getExtensionConfig();
     !config.statusBar && clearStatus();
+  });
+
+  !config.statusBar && clearStatus();
 }
