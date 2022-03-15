@@ -1,7 +1,7 @@
 {
 	"name": "even-prettier",
 	"displayName": "Even Prettier - Code Formatter",
-	"description": "VS Code extension based off of Prettier but with more customization",
+	"description": "VS Code formatter extension built off of Prettier with more customization",
 	"version": "0.5.1",
 	"publisher": "jameszhanga",
 	"author": "James Zhang",

@@ -1,15 +1,30 @@
 <div style="padding: 0 25px 0">
-<div align="center"><img src="https://github.com/remimarsal/prettier-now-vscode/raw/master/prettier-logo.png" alt="Logo" height="128" /></div><h1 align="center">Even Prettier</h1><h3 align="center" style="border:none">Code Formatter for Visual Studio Code</h2><div align="center">
-<!-- <img src="https://vsmarketplacebadge.apphb.com/version/remimarsal.prettier-now.svg" alt="">
-<img src="https://vsmarketplacebadge.apphb.com/installs/remimarsal.prettier-now.svg" alt=""></div> -->
-<br/>
 <div align="center">
-<img src="https://github.com/remimarsal/prettier-now-vscode/raw/master/prettier-now2.gif" alt="Visual" />
+  <img src="https://github.com/remimarsal/prettier-now-vscode/raw/master/prettier-logo.png" alt="Logo" height="128" />
+</div>
+
+<h1 align="center">Even Prettier</h1>
+<h2 align="center" style="border:none">Code Formatter for Visual Studio Code</h2>
+
+<div align="center">
+  <img src="https://vsmarketplacebadge.apphb.com/version-short/jameszhanga.even-prettier.svg" alt="">
+  <img src="https://vsmarketplacebadge.apphb.com/installs/jameszhanga.even-prettier.svg" alt="">
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://github.com/remimarsal/prettier-now-vscode/raw/master/prettier-now2.gif" alt="Visual" />
 </div>
 
 <span>VS Code package to format your Javascript using [Prettier Miscellaneous](https://github.com/arijs/prettier-miscellaneous). *Based on [Esben Petersen's extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) and [Bastian Kistner's extension](https://marketplace.visualstudio.com/items?itemName=passionkind.prettier-vscode-with-tabs).*</span>
-<span>Prettier Miscellaneous is a fork of [Prettier](https://github.com/prettier/prettier) and allows more customization of the output.<br/>
-This extension is a wrapper around Prettier Miscellaneous, please report issues regarding the output on [Even Prettier](https://github.com/jameszhang-a/even-prettier-vscode/issues) or [Prettier Miscellaneous](https://github.com/arijs/prettier-miscellaneous/issues).</span><br/><br/>
+<span>
+  Prettier Miscellaneous is a fork of [Prettier](https://github.com/prettier/prettier) and allows more customization of the output.
+  <br/>
+  This extension is a wrapper around Prettier Miscellaneous, please report issues regarding the output on [Even Prettier](https://github.com/jameszhang-a/even-prettier-vscode/issues) or [Prettier Miscellaneous](https://github.com/arijs/prettier-miscellaneous/issues).
+</span>
+<br/>
+<br/>
 
 
 --------------------------------------------------------------------------------
