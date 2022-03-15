@@ -2,7 +2,7 @@
 	"name": "even-prettier",
 	"displayName": "Even Prettier - Code Formatter",
 	"description": "VS Code extension based off of Prettier but with more customization",
-	"version": "0.5.0",
+	"version": "0.5.1",
 	"publisher": "jameszhanga",
 	"author": "James Zhang",
 	"galleryBanner": {
