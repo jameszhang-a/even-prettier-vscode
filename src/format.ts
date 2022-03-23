@@ -9,7 +9,7 @@ import {
 } from './config';
 import { exec } from './exec';
 
-const prettier = require('../ext');
+const prettier = require('prettierx');
 
 /**
  * Format document
