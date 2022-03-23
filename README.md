@@ -86,9 +86,9 @@ into account, wrapping code when necessary.
 --------------------------------------------------------------------------------
 ### Installation
 
-Install through VS Code extensions. Search for `Prettier Now`.
+Install through VS Code extensions. Search for `Even Prettier`.
 
-[Visual Studio Code Market Place: Prettier Now](https://marketplace.visualstudio.com/items?itemName=remimarsal.prettier-now)
+[Visual Studio Code Market Place: Even Prettier](https://marketplace.visualstudio.com/items?itemName=jameszhanga.even-prettier)
 
 Can also be installed using 
 
@@ -109,13 +109,13 @@ Set `editor.formatOnSave` to `true` in settings to automatically format files on
 CMD + Shift + P -> Format Document
 ```
 
-If you are using the Prettier output option, it is recommanded to use the [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer) extension to get some syntactic coloring in the logs.
+If you are using the Prettier output option, it is recommended to use the [Output Colorizer](https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer) extension to get some syntactic coloring in the logs.
 
 <div align="center">
 <img src="https://github.com/remimarsal/prettier-now-vscode/raw/master/output.png" alt="Visual" height="320" />
 </div>
 
-*<small>In order to run Prettier on your file, make sure VSCode recognises it as a filetype supported by Prettier Now. The filetype currently recognized is shown in the status bar. (e.g: JavaScript for .js files, Sass for .scss files, etc...). If for some reasons Prettier isn't applied on some filetype and you think it should, please let me know and report it [here](https://github.com/remimarsal/prettier-now-vscode/issues) !</small>*
+*<small>In order to run Prettier on your file, make sure VSCode recognizes it as a filetype supported by Even Prettier. The filetype currently recognized is shown in the status bar. (e.g: JavaScript for .js files, Sass for .scss files, etc...). If for some reasons Prettier isn't applied on some filetype and you think it should, please let me know and report it [here](https://github.com/jameszhang-a/even-prettier-vscode/issues) !</small>*
 
 --------------------------------------------------------------------------------
 
